@@ -98,6 +98,4 @@ print(z2)
 print(type(z2))
 
 # tuple 튜플
-
-
-
+print("wonpyo")
