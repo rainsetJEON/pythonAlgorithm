@@ -96,6 +96,7 @@ z = ['life', 'is', 'too', 'short']
 z2 = " ".join(z)
 print(z2)
 # print(type(z2))
+# wjsdnwlsqkqh
 
 # tuple 튜플
 
