@@ -106,8 +106,48 @@ T1 = (1, 2, 3)
 T1 = T1 + (4,)
 print(T1)
 
+# 딕셔너리 자료형
+dic1 = {'name' : "woojin", 'birth' : 991111, 'toy' : ['hari', 15]}
+dic1['age'] = 20
+print(dic1)
 
+del dic1['age']
+print(dic1)
+print(dic1['name'])
 
+for k in dic1.keys():
+    print(k)
 
+print(dic1.items())
 
+"""
+딕셔너리 함수들
+key 리스트 만들기 ; a.keys()
+ ex) for k in a.keys():
+        print(k)
+
+        =>
+        name
+        birth
+        toy
+        
+        *리스트로 변경하고 싶다면?
+        list(a.keys())
+        =>['name', 'birth', 'toy']
+
+value 리스트 만들기 ; a.values()
+key, value 쌍 얻기 ; items
+ ->key와 value의 쌍을 튜플로 묶은 값을 dict_items 객체로 반환
+모두 지우기 ; clear
+ -> 빈 딕셔너리 {}로 표현됨 
+key로 value 얻기 ; get
+ -> 없는 key값을 get 하게 되면 None을 반환
+    a.get(x,디폴트 값)으로 함수를 사용한다면 디폴트 값 반환
+해당 key가 딕셔너리 안에 있는지 조사 ; in
+ ->True/False
+"""
+
+# p89 연습문제 3번
+dic2 = {'A':90, 'B':80}
+print(dic2.get('C', 70))
 
