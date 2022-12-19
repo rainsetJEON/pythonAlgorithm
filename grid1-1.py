@@ -151,3 +151,56 @@ key로 value 얻기 ; get
 dic2 = {'A':90, 'B':80}
 print(dic2.get('C', 70))
 
+# 집합 자료형
+s1 = set([1,2,3])
+print(s1)
+# 집합 자료형의 특징 ; 중복 허용x, 순서x(즉, 인덱싱 없음)
+# 튜플이나 리스트로 변환 가능
+#ex)
+print(set("hello"))
+# => {'l', 'h', 'o', 'e'}]
+s2 = set([1,2,3,4,5,6])
+"""
+집합 연산
+교집합 ; & 또는 s2.intersection(s2)
+합집합 ; | 또는 s2.union(s1)
+차집합 ; - 또는 s2.difference(s1)
+값 추가 ; (한 개)add, (여러 개)update
+ ㄴ> ex) s1.add(4) / s1.update([7,8,9])
+값 제거 ; remove
+"""
+
+# p95 연습문제 1번
+listA = [1,1,1,2,2,3,3,3,4,4,5]
+sA = set(listA)
+print(sA)
+listA = list(sA)
+print(listA)  # 집합sA를 다시 리스트로 변환
+
+# 연습문제 2번
+# 값이 비어있는 집합 자료형은 딕셔너리로 인식하게 된다.
+# 그렇다면 값이 비어있는 집합 자료형은 어떻게 만들 수 있을까?
+a = {}
+a = set(a)
+print(type(a))
+
+# 불 자료형
+listB = [1,2,3,4]
+while listB:
+    print(listB.pop())
+
+print(bool(3))
+print(id(listB))  #메모리 주소 확인 / 동일한 id(메모리 주소)를 갖고 있으면 동일한 객체!
+
+from copy import copy  #copy import를 써서 복사하는 방식
+listC = copy(listB)
+print(listC)
+
+print(listA is listB)  #객체가 같은지 다른지 확인
+
+# 변수를 만드는 여러가지 방법
+a, b = ('python', 'life')
+[c, d] = ['fly', 'eraser']
+(e, f) = 'dog', 'puppy'
+
+
