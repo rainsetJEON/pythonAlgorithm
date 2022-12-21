@@ -203,6 +203,5 @@ a, b = ('python', 'life')
 [c, d] = ['fly', 'eraser']
 (e, f) = 'dog', 'puppy'
 
-# 다음시간에 계속...
-# to be continued...
+
 
