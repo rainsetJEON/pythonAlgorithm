@@ -40,4 +40,29 @@ if 'd' in list1:
 else:
     print("'d'is not in list")
 
+# 조건문 표현식 -1
+score = 60
+if score >= 60:
+    message = "success"
+else:
+    message = "failure"
+print(message)
 
+# 조건문 표현식 -2
+message = "success" if score >= 60 else "failure"
+print(message)
+
+# p118 연습문제 1번
+a = "Life is too shrot, you need python"
+if 'wife' in a:
+    print('wife')
+elif 'python' in a and 'you' not in a:
+    print('python')
+elif 'shirt' not in a:
+    print('shirt')
+elif 'need' in a:
+    print('need')
+else:
+    print('none')
+
+    
