@@ -66,3 +66,5 @@ else:
     print('none')
 
     
+# 오늘은 여기까지
+# to be continued..
