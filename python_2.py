@@ -66,5 +66,65 @@ else:
     print('none')
 
     
-# 오늘은 여기까지
-# to be continued..
+# while문
+treeHit = 0
+while treeHit <5:
+    treeHit = treeHit + 1
+    print("treeHit = %d" % treeHit)
+    if treeHit == 5:
+        print("yes! we made it!")
+
+prompt = """
+1. Add
+2. Del
+3. List
+4. Quit
+
+Enter number : 
+"""
+number = 0
+while number != 4:
+    print(prompt)
+    number = int(input())
+
+# while문 강제로 빠져나가기
+# coffee
+coffee = 10
+money = 300
+while money:
+    print("Here you are")
+    coffee = coffee -1
+    print("남은 커피 = %d 개" % coffee)
+    if coffee == 0:
+        print("sold out")
+        break
+
+# coffee2
+coffee = 10
+while True:
+    money = int(input("돈을 넣어 주세요: "))
+    if money == 300:
+        print("Here you are")
+        coffee = coffee -1
+    elif money > 300:
+        print("here is your change %d" % (money -300))
+        coffee = coffee -1
+    else:
+        print("your balance is low")
+        print("남은 커피 = %d 개" % coffee)
+    if coffee == 0:
+        print("sold out")
+        break
+# ㄴ> 조건에 맞지 않으면 while문을 빠져 나간다.
+
+# while문 맨 처음으로 돌아가기 ; continue
+A = 0
+while A < 10:
+    A = A + 1
+    if A % 2 == 0: continue
+    print(A)
+
+# 무한 루프
+# Ctrl + C 를 눌러서 빠져 나가자
+
+# p125 연습문제 1번
