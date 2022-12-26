@@ -128,4 +128,4 @@ while A < 10:
 # Ctrl + C 를 눌러서 빠져 나가자
 
 # p125 연습문제 1번
-# merry christmas~
+# 벌써 시간이... T^T
