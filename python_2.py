@@ -128,4 +128,13 @@ while A < 10:
 # Ctrl + C 를 눌러서 빠져 나가자
 
 # p125 연습문제 1번
-# 벌써 시간이... T^T
+num = 1
+result = 0
+while num < 100:
+    if num % 3 == 0:
+        result = result + num
+    num = num +1
+
+print(result)
+
+#여기 다시!
