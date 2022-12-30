@@ -127,7 +127,7 @@ while A < 10:
 # 무한 루프
 # Ctrl + C 를 눌러서 빠져 나가자
 
-# p125 연습문제 1번
+# p125 연습문제 1번 (수기 작성!)
 num = 1
 result = 0
 while num < 100:
@@ -136,3 +136,25 @@ while num < 100:
     num = num +1
 
 print(result)
+
+# p125 연습문제 2번 (수기 작성!)
+student = [20, 55, 67, 82, 45, 33, 90, 87, 100, 25]
+result= 0
+
+while student:
+    score = student.pop()
+    if score >=50:
+        result = result + score
+
+print(result)
+
+
+# p125 연습문제 3번 (수기 작성!!)
+star = '*'
+print(star)
+print(star * 2)
+
+n = 0
+while n < 5:
+    n = n +1
+    print(star* n)
