@@ -158,3 +158,56 @@ n = 0
 while n < 5:
     n = n +1
     print(star* n)
+
+# 3번 답안
+i = 0
+while True:
+    i += 1
+    if i >4 : break
+    print('*' * i)
+
+# for문
+# 전형적인 for문
+testL = ['one', 'two', 'three']
+for i in testL:
+    print(i)
+
+testL2 = [(1,2), (3,4), (5,6)]
+for (first, last) in testL2:
+    print(first + last)
+
+# test 결과 
+# 1)결과만 출력
+score = [90, 25, 67, 45, 80]
+for i in score:
+    if i >= 60:
+        print("good grade!")
+    else:
+        print("RETAKE")
+
+# 2)학생 번호와 결과 출력
+number = 0
+for mark in score:
+    number = number + 1
+    if mark >= 60:
+        print("Result : %d student -> pass" % number)
+    else:
+        print("Result : %d student -> retake" % number) 
+
+# 3)합격만 결과 출력 ; for문에서도 continue 사용 가능
+number = 0
+for mark in score:
+    number += 1
+    if mark >= 60:
+        print("%d student, congratulations!" % number)
+    else:
+        continue
+
+# 3)더 간결하게
+number = 0
+for mark in score:
+    number += 1
+    if mark < 60:
+        continue
+    print("%d student, congratulations!" % number)
+
