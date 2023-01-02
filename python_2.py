@@ -211,3 +211,14 @@ for mark in score:
         continue
     print("%d student, congratulations!" % number)
 
+# for문과 range함수
+a = range(1,4)
+for i in a:
+    print(i)
+
+print(len(a))
+
+# 131p marks3.py
+marks = [90, 25,67, 45, 80]
+for number in range(len(marks)):
+    if marks[number]
