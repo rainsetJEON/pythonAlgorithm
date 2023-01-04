@@ -221,4 +221,31 @@ print(len(a))
 # 131p marks3.py
 marks = [90, 25,67, 45, 80]
 for number in range(len(marks)):
-    if marks[number]
+    if marks[number] < 60 :
+        continue
+    print("%d student, pass" % (number +1))
+
+""" ㄴ> marks[number]에는 0~4번의 숫자가 부여되므로, 출력 시에는
+        number + 1로 설정
+"""
+
+# 구구단 출력
+for i in range(2,10):
+    for j in range(1,10):
+        print(i*j, end=" ")
+    print('')
+
+"""
+    ㄴ> 인수 end를 넣은 이유 : 해당 결과값을 출력할 때
+        다음 줄로 넘기지 않고 그 줄에 계속해서 출력하기 위해서
+    ㄴ> print('')의 의미 : 두번째 for문이 끝나면 결과값을 
+        다음 줄부터 출력하게 해준다.
+"""
+
+# 리스트 안에 for문 포함 시키기
+a = [1,2,3,4]
+result = []
+for num in a:
+    result.append(num * 3)
+
+print(result)
