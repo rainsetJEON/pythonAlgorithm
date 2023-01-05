@@ -249,3 +249,6 @@ for num in a:
     result.append(num * 3)
 
 print(result)
+
+
+# 내일은 꼭 7시에 일어나자!
