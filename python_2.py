@@ -250,5 +250,3 @@ for num in a:
 
 print(result)
 
-
-# 내일은 꼭 7시에 일어나자!
