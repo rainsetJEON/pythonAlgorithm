@@ -243,6 +243,7 @@ for i in range(2,10):
 """
 
 # 리스트 안에 for문 포함 시키기
+# 1번
 a = [1,2,3,4]
 result = []
 for num in a:
@@ -250,6 +251,22 @@ for num in a:
 
 print(result)
 
-# 오늘은 01/12
-# 2월 전에 코테 준비 끝내고 싶다...
-# 힘내자!
+# 2번
+a = [1,2,3,4]
+result = []
+for num in a:
+    result.append(num * 3)
+
+print(result)
+
+# 2-1번
+a = [1,2,3,4]
+result = [num * 3 for num in a]
+print(result)
+
+# 3번
+a = [1,2,3,4]
+result = [num * 3 for num in a if num % 2 == 0]
+print(result)
+
+# p134 연습문제 1번
