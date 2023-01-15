@@ -270,3 +270,4 @@ result = [num * 3 for num in a if num % 2 == 0]
 print(result)
 
 # p134 연습문제 1번
+# 01/15
