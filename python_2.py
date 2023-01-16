@@ -270,4 +270,44 @@ result = [num * 3 for num in a if num % 2 == 0]
 print(result)
 
 # p134 연습문제 1번
-# 01/15
+for i in range(1,101):
+    print(i)
+
+# p134 연습문제 2번
+A = [70, 60, 55, 75, 95, 90, 80, 80, 85, 100]
+score = 0
+avg = 0
+for i in A:
+    score = score + i
+
+avg = score / len(A)
+print(avg)
+
+# p134 연습문제 3번
+numbers = [1,2,3,4,5]
+result = [n * 2 for n in numbers if n % 2 == 1]
+print(result)
+
+
+# 함수
+"""
+<함수의 구조>
+def 함수명(매개변수):
+    <수행할 문장1>
+    <수행할 문장2>
+    ...
+"""
+
+# 함수 예시 1)
+def add(a,b):
+    return a + b
+print(add(3,5))
+
+# 함수 예시 1-2)
+def add2(a,b):
+    result = a + b
+    return result
+a = add2(3,4)
+print(a)
+
+# 입력값이 없는 함수
