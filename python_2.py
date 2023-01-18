@@ -311,3 +311,27 @@ a = add2(3,4)
 print(a)
 
 # 입력값이 없는 함수
+def say():
+    return 'Hi!'
+a = say()
+print(a)
+
+# 결과값이 없는 함수
+def plus(a,b):
+    print('%d, %d의 합은 %d 입니다.' %(a,b,a+b))
+print(plus(3,5))
+b = plus(3,4)
+print(b)
+""" 결과값이 없다는 것의 의미?
+    ㄴ> print(b)의 결과가 'None'으로 출력되는 것처럼 
+    결과값은 오직 return 명령어로만 돌려받을 수 있다.
+"""
+
+# 입력값도 결과값도 없는 함수
+def say2():
+    print("Hi~")
+say2()
+
+
+# 오늘은 꼭 파이썬 기초 끝내기
+# 시험 일정 및 채용공고 확인 하기
