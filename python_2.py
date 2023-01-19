@@ -332,6 +332,14 @@ def say2():
     print("Hi~")
 say2()
 
+# 입력값이 여러 개인 함수
+def add_many(*args):
+    result = 0
+    for i in args:
+        result = result + i
+    return result
 
-# 오늘은 꼭 파이썬 기초 끝내기
+print(add_many(1,2,3,4,5))
+
+
 # 시험 일정 및 채용공고 확인 하기
