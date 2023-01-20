@@ -341,5 +341,21 @@ def add_many(*args):
 
 print(add_many(1,2,3,4,5))
 
+def add_mul(choice, *args):
+    if choice == "add":
+        result = 0
+        for i in args:
+            result = result + i
+    elif choice == "mul":
+        result = 1
+        for i in args:
+            result = result * i
+        
+    return result
+
+test1 = add_mul("add", 1,2,3,4,5)
+print(test1)
+test2 = add_mul("mul", 2,4,5)
+print(test2)
 
 # 시험 일정 및 채용공고 확인 하기
