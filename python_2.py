@@ -358,4 +358,12 @@ print(test1)
 test2 = add_mul("mul", 2,4,5)
 print(test2)
 
+# 키워드 파라미너 kwargs
+def print_kwargs(**kwargs):
+    print(kwargs)
+
+print_kwargs(a=1)
+print_kwargs(name = 'Gildong', age=3)
+ #ㄴ> 딕셔너리 (key : value)
+
 # 시험 일정 및 채용공고 확인 하기
