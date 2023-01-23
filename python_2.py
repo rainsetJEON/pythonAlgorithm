@@ -366,4 +366,40 @@ print_kwargs(a=1)
 print_kwargs(name = 'Gildong', age=3)
  #ㄴ> 딕셔너리 (key : value)
 
-# 시험 일정 및 채용공고 확인 하기
+# 매개변수에 초깃값 미리 설정하기
+def myself(name, age, man = True):
+    print("My name is %s" % name)
+    print("I'm %d years old" % age)
+    if man:
+        print("man")
+    else:
+        print("woman")
+myself('WJ', 15)
+myself('WP', 15, True)
+myself('RH',18, False)
+# ㄴ> 초깃값을 설정해놓은 변수는 항상 뒤쪽에 위치시켜야 한다.
+
+# 함수 안에서 함수 밖의 변수를 변경하는 방법
+# 1) return 이용
+a = 1
+def vartest(a):
+    a = a + 1
+    return a
+a = vartest(a)
+print(a)
+
+# 2) global 명령어 (비추천)
+a = 1
+def vartest():
+    global a
+    a = a + 1
+vartest()
+print(a)
+# ㄴ> global ; 함수 안에서 함수 밖의 a 뱐수를 직접 사용한다. (global 명령어는 독립적으로 존재하는 것이 좋기 때문에 외부 변수에 종속적인 함수에서 사용하기에는 권장하지 않는다.)
+
+# lambda
+add = lambda a, b : a+b
+result = add(4,7)
+print(result)
+
+# p154 연습문제
