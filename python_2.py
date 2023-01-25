@@ -402,4 +402,11 @@ add = lambda a, b : a+b
 result = add(4,7)
 print(result)
 
-# p154 연습문제
+# p154 연습문제 1번
+def is_odd(a):
+    if a % 2 == 0 :
+        return print("even")
+    else:
+        return print('odd')
+
+is_odd(4)
