@@ -410,3 +410,17 @@ def is_odd(a):
         return print('odd')
 
 is_odd(4)
+
+# p154 연습문제 2번
+def is_normal(*args):
+    result = 0
+    for i in args:
+        sum = result + i
+        normal = sum / len(args)
+    return normal
+
+A = is_normal(1,2,3,4,5)
+print(A)
+# 이거 다시!
+
+
