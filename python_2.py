@@ -421,6 +421,19 @@ def is_normal(*args):
 
 A = is_normal(1,2,3,4,5)
 print(A)
-# 이거 다시!
 
+# 1번 답안
+def is_odd(number):
+    if number % 2 == 1:
+        return True
+    else:
+        return False
+is_odd(3)
+
+# 1번 lambda
+is_odd2 = lambda a:True if a % 2 == 0 else False
+is_odd2(4)
+
+is_odd3 = lambda a:print("even") if a % 2 == 0 else print("odd")
+is_odd3(9)
 
