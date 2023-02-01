@@ -437,3 +437,16 @@ is_odd2(4)
 is_odd3 = lambda a:print("even") if a % 2 == 0 else print("odd")
 is_odd3(9)
 
+# 04-2 사용자 입력과 출력
+for i in range(8):
+    print(i, end=' ')
+
+# p157 연습문제 1번
+input1 = int(input("first number = "))
+input2 = int(input('second number = '))
+
+total = input1 + input2
+print(total)
+
+# p158 연습문제 2번
+
