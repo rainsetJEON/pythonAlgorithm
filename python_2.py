@@ -448,5 +448,26 @@ input2 = int(input('second number = '))
 total = input1 + input2
 print(total)
 
-# p158 연습문제 2번
+# p158 연습문제 2번 1)
+num = input("Enter numbers :")
+numbers = num.split(",")
+total = 0
+for i in numbers:
+    total += int(i)
+print(total)
+
+# 연습문제 2번 2)
+def is_sum(*args):
+    sum = 0
+    for i in args:
+        sum += i
+    return sum
+
+A = input("Enter numbers : ")
+A = A.split(",")
+total = 0
+for i in A:
+    total += int(i)
+
+is_sum(total)
 
