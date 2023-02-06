@@ -465,9 +465,13 @@ def is_sum(*args):
 
 A = input("Enter numbers : ")
 A = A.split(",")
-total = 0
-for i in A:
-    total += int(i)
 
 is_sum(total)
 
+# p158 연습문제 3번
+print("you" "need" "python")
+print("you" + "need" + "python")
+print("you","need","python")
+print("".join(["you", "need", "python"]))
+
+# p158 연습문제 4번
