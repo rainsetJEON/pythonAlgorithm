@@ -475,3 +475,17 @@ print("you","need","python")
 print("".join(["you", "need", "python"]))
 
 # p158 연습문제 4번
+byby = int(input("Enter numbers : "))
+for i in range(1,10):
+    result = i * byby
+    print(result, end=' ')
+
+# 연습문제 4번 2)
+def Gugudan(a):
+    for i in range(1,10):
+        result = i * a
+        print(result, end=' ')
+
+num = int(input("Enter number : "))
+Gugudan(num)
+
