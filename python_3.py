@@ -112,7 +112,32 @@ class SafeFourcal(Fourcal):
 # 클래스 변수
 # 클래스 안에서 선언된 변수로, 클레스에 의해 생성된 모든 객체에 공유된다는 특징을 갖는다.
 
+# p195 연습문제 1번
+class Calculator:
+    def __init__(self):
+        self.value = 0
+    
+    def add(self, val):
+        self.value += val
 
+class UpgradeCalculator(Calculator):
+    def minus(self, val):
+        self.value -= val
 
+cal = UpgradeCalculator()
+cal.add(10)
+cal.minus(3)
+print(cal.value)
 
+# p195 연습문제 2번
+class MaxLimitCalculator(Calculator):
+    def add(self, val):
+        self.value += val
+        if self.value> 100:
+            self.value = 100
 
+cal4 = MaxLimitCalculator()
+cal4.add(30)
+cal4.add(40)
+cal4.add(50)
+print(cal4.value)
