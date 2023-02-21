@@ -1,7 +1,7 @@
 # 04-3 파일 읽고 쓰기
 # p159~
 
-# 5. 클래쓰
+# 5-1. 클래쓰
 class Calculator:
     def __init__(self) :
         self.result = 0
@@ -141,3 +141,5 @@ cal4.add(30)
 cal4.add(40)
 cal4.add(50)
 print(cal4.value)
+
+# 5-2. 모듈
