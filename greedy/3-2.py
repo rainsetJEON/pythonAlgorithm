@@ -20,7 +20,7 @@ result = first*k*count + second*count2
 print(result)
 '''
 
-# 정답 답안
+# 예시 답안
 
 count = int(m / (k+1)) * k
 count += m % (k+1)
