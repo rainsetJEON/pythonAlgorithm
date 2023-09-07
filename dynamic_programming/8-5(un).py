@@ -31,7 +31,6 @@ for i in range(n):
     for j in range(array[i], m+1):
         if d[j - array[i]] != 10001:  # (i-k)원을 만드는 방법이 존재하는 경우
             d[j] = min(d[j], d[j-array[i]]+ 1)
-        print(d[j])
 
  # 결과 출력
 if d[m] == 10001:
