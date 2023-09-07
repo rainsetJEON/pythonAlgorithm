@@ -56,10 +56,12 @@ def binary_search(array, target, start, end):
     else:
         return binary_search(array, target, mid+1, end)
 
+'''
  # n과 target 입력
 n, target = list(map(int, input().split()))
  # array 입력
 array = list(map(int, input().split()))
+
 
  # 이진 탐색 결과 출력
 result = binary_search(array, target, 0, n-1)
@@ -67,5 +69,74 @@ if result == None:
     print('None')
 else:
     print(result + 1)
+'''
+
+
+# 7-3.py 반복문으로 구현한 이진 탐색 소스코드
+def binary_search2(array, target, start, end):
+    while start <= end:
+        mid = (start + end) // 2
+        # 찾은 경우 중간점 인덱스 반환
+        if array[mid] == target:
+            return mid
+        # mid > target ; 왼쪽 확인
+        elif array[mid] > target:
+            end = mid -1
+        # mid < target ; 오른쪽 확인
+        else: 
+            start = mid + 1
+    return None
+
+ # n과 target 입력
+n, target = list(map(int, input().split()))
+ # array 입력
+array = list(map(int, input().split()))
+
+ # 이진 탐색 결과 출력
+result = binary_search2(array, target, 0, n-1)
+if result == target:
+    print('원소가 존재하지 않음')
+else:
+    print(result + 1)
+
+
+# 트리 자료 구조 (tree)
+'''
+이진 탐색의 전제 조건은 데이터 정렬!
+
+DB는 내부적으로 대용량 데이터 처리에 적합한 트리 자료 구조를 이용하여 항상 데이터가 정렬되어 있음
+이진 탐색과는 조금 다르지만, 잊딘 탐색과 유사한 방법을 이용해 탐색을 항상 빠르게 수행
+
+
+ * 트리의 특징
+ - 트리는 부모 노드와 자식 노드의 관계로 표현된다.
+ - 트리의 최상단 노드 ; 루트 노드
+ - 트리의 최하다 노드 ; 단말 노드
+ - 트리에서 일부를 떼어내도 트리 구조이며, 이를 서브 트리라고 한다.
+ - 파일시스템과 같이 게층적이고 정렬된 데이터를 다루기에 적합하다.
+'''
+
+# 이진 탐색 트리
+'''
+            [30]
+        [17]    [48]
+      [5][23]  [37][50]
+
+ - 부모 노드보다 왼쪽 자식 노드가 작고, 오른쪽 자식 노드가 크다.
+'''
+
+ # cf) 빠르게 입력 받기
+ # 입력은 기본 라이브러리 input()을 써도 되지만, 데이터의 개수가 많으면 동작 속도가 느림
+ # readline()
+'''
+# 7-4.py 한 줄 입력받아 출력하는 소스코드
+import sys
+ # 하나의 문자열 데이터 입력
+input_data = sys.stdin.readline().rstrip()
+ # 입력한 문자열 그대로 출력
+print(input_data)
+'''
+ # ㄴ> sys 라이브러리를 사용할 때는 한 줄 입력 받은 후에 rstrip()을 호출해야 한다.!!
+ # ㄴ-> readline()으로 입력하면 입력 후 엔터(enter)가 줄바꿈 기호로 입력되므로, 이 공백문자를 지우기 위해 rstrip()함수 이용
 
 
