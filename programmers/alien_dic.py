@@ -1,3 +1,4 @@
+# 제목 : 외계어 사전
 def solution(spell, dic):
     answer = 2
     sum = 0

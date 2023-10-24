@@ -1,3 +1,4 @@
+# 제목 : 숫자의 표현
 def solution(n):
     result = 1
     for i in range(1, n//2+1):
